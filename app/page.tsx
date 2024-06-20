@@ -9,6 +9,8 @@ export default async function HomePage() {
     return redirect("/login");
   }
 
+  console.log("session", session);
+
   return (
     <>
       <Logout />

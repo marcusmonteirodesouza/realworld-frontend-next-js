@@ -30,8 +30,6 @@ export class Users {
   async login(request: LoginRequest): Promise<UserResponse | ErrorResponse> {
     const url = `${this.apiBaseUrl}/users/login`;
 
-    console.log(JSON.stringify(request));
-
     const response = await fetch(url, {
       method: "POST",
       headers: {
